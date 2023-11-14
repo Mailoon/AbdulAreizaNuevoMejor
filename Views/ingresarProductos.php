@@ -5,13 +5,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Publicar productos</title>
+    <link rel="stylesheet" href="../Controllers/agregarProductos.css">
     <script src="../Controllers/validacionFormularios.js" defer></script>
 </head>
 
 <body>
     <?php require_once './navbar.php'; ?>
-    <form action="../Models/insertarProductos.php" method="post" onsubmit="return validarIngresoProductos()" enctype="multipart/form-data">
-        <div class="formDiv">
+    <main>
+        <form action="../Models/insertarProductos.php" method="post" onsubmit="return validarIngresoProductos()" enctype="multipart/form-data">
+            <div class="formDiv">
             <label for="nombreProducto">Nombre del producto</label>
             <input type="text" id="nombreProducto" name="nombreProducto">
         </div>
@@ -31,6 +33,7 @@
             <input type="submit" value="Registrar producto">
         </div>
     </form>
+</main>
 </body>
 
 </html>

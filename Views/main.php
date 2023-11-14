@@ -5,17 +5,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inicio</title>
+    <link rel="stylesheet" href="../Controllers/Main.css">
 </head>
 
 <body>
     <?php require_once './navbar.php'; ?>
     <main>
-        <section>
-            <h2>Futura Tecnología: Forjando el Futuro Hoy</h2>
-            <p>En Futura Tecnología, somos una empresa líder en la vanguardia tecnológica. Nuestro equipo multidisciplinario se dedica a la investigación y desarrollo de soluciones avanzadas en áreas como inteligencia artificial, ciberseguridad y sostenibilidad.</p>
-
-        </section>
-        <section>
+        <article>
+            <section>
+                <h2>Futura Tecnología: Forjando el Futuro Hoy</h2>
+                <p>En Futura Tecnología, somos una empresa líder en la vanguardia tecnológica. Nuestro equipo multidisciplinario se dedica a la investigación y desarrollo de soluciones avanzadas en áreas como inteligencia artificial, ciberseguridad y sostenibilidad.</p>
+                
+            </section>
+            <section>
             <h2>¡Somos Futura Tecnología!</h2>
             <p>ENos apasiona la innovación y la tecnología. Somos un equipo diverso de expertos, soñadores y hacedores. Estamos comprometidos con la creación de un futuro más brillante y emocionante a través de la tecnología. ¡Únete a nosotros en este viaje hacia lo desconocido!</p>
         </section>
@@ -27,6 +29,10 @@
             <h2>Enfoque Central</h2>
             <p>Nos centramos en tecnologías avanzadas que abordan desafíos globales. Colaboramos estrechamente para llevar innovaciones tangibles a la sociedad y liderar el camino hacia un mundo tecnológicamente avanzado y mejorado.</p>
         </section>
+    </article>
+    <article>
+        <img src="../container/Computador3.png" alt="">
+    </article>
     </main>
 </body>
 

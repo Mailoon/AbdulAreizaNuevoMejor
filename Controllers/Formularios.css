@@ -1,0 +1,78 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(90deg, rgba(177,172,255,1) 0%, rgb(90, 61, 218) 52%, rgba(146,237,255,1) 100%);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 450px;
+    height: 400px;
+    padding: 20px;
+    border: none;
+    border-radius: 20px;
+    background-color: #bcd7d74e;
+}
+
+i {
+    font-size: 20px;
+    position: absolute;
+    right: 5px;
+    bottom: 5px;
+}
+
+div {
+    display: flex;
+    position: relative;
+    width: 300px;
+    gap: 30px;
+    justify-content: space-around;
+}
+
+.botonesFooter {
+    width: 320px;
+}
+
+.inputFormularios {
+    width: 300px;
+    height: 30px;
+    margin-left: 5px;
+    border-radius: 5px;
+    padding: 5px;
+    border: 1px solid #ea000054;
+}.btn{
+    display: flex;
+    height: 30px;
+    border: none;
+    border-radius: 5px;
+    min-width: 120px;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 18px;
+}
+.iniciar{
+    background-color: #74fa14;
+}.regresar{
+    background-color: #41979db3;
+}
+.backgroundNaraja{
+    background-color: #fa8b14;
+}.StilosNone{
+    text-decoration: none;
+    color: #111;
+}

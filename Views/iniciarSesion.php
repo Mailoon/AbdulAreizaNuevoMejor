@@ -35,6 +35,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Iniciar sesión</title>
+    <link rel="stylesheet" href="../Controllers/Formularios.css">
     <script src="https://kit.fontawesome.com/e0348cbc34.js" crossorigin="anonymous"></script>
     <script src="../Controllers/validacionFormularios.js"></script>
 </head>
@@ -44,16 +45,16 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <h1>Iniciar sesion</h1>
         <div>
             <i class="fa-regular fa-envelope"></i>
-            <input type="text" name="emailIniciarSesion" id="emailIniciarSesion">
+            <input type="text" name="emailIniciarSesion" placeholder="Correo" id="emailIniciarSesion" class="inputFormularios">
         </div>
         <div>
             <i class="fa-solid fa-shield-halved"></i>
-            <input type="password" name="passwordIniciarSesion" id="passwordIniciarSesion">
+            <input type="password" name="passwordIniciarSesion" placeholder="Contraseña" id="passwordIniciarSesion" class="inputFormularios">
         </div>
         <div>
-            <input type="submit" value="Iniciar sesion">
-            <a href="./main.php">Regresar</a>
-            <a href="./registrarse.php">Registrarse</a>
+            <input type="submit" value="Iniciar sesion" class="btn iniciar">
+            <a href="./main.php" class="btn regresar StilosNone">Regresar</a>
+            <a href="./registrarse.php" class="btn backgroundNaraja StilosNone">Registrarse</a>
         </div>
     </form>
     <?php if (isset($error_message)) : ?>

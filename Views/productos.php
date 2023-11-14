@@ -1,13 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Productos</title>
-    <script src="../Controllers/"></script>
+    <title>Productos</title>    
+    <link rel="stylesheet" href="../Controllers/Productos.css">
 </head>
-
 <body>
     <?php require_once './navbar.php'; ?>
     <main>
@@ -22,7 +21,11 @@
                 $productosVista .= '<h3>' . $nameProducto . '</h3>';
                 $productosVista .= '<img src="data:image/jpeg;base64,' . base64_encode($imagen) . '" alt="Producto">';
                 $productosVista .= '<p>' . $caracteristicaProduct . '</p>';
-                $productosVista .= '<button onclick="agregarAlCarrito(' . $ID . ')">Agregar al carrito</button>';
+                $productosVista .= '<p>'.'$'.$precioProducto.'</p>';
+                $productosVista .= '<form method="post" action="../Controllers/agregarCarritoCompras.php">';
+                $productosVista .= '<input type="hidden" name="productID" value="' . $ID . '">';
+                $productosVista .= '<button onclick="carritoAgregar()" class="botonCarritoAdd" type="submit">Agregar<i class="fa-solid fa-cart-shopping fa-bounce" style="color: #ffffff;"></i></button>';
+                $productosVista .= '</form>';
                 $productosVista .= "</div>";
             }
             if (!empty($productosVista)) {
